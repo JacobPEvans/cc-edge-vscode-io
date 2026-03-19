@@ -1,0 +1,10 @@
+id: main
+conf:
+  functions:
+    - id: eval
+      filter: "true"
+      disabled: false
+      conf:
+        add:
+          - name: copilot_source
+            value: "__srcfile && __srcfile.includes('GitHub.copilot-chat') ? 'copilot-chat' : __srcfile && __srcfile.includes('GitHub.copilot') ? 'copilot' : null"

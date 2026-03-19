@@ -1,0 +1,34 @@
+id: default
+groups: {}
+comments: []
+routes:
+  - id: vscode-logs
+    name: VS Code Logs (File Monitor)
+    final: true
+    disabled: false
+    pipeline: main
+    description: "VS Code application and extension logs including Copilot"
+    enableOutputExpression: false
+    filter: __inputId=='file:cc-edge-vscode-io.vscode-logs'
+    clones: []
+    output: default
+  - id: vscode-settings
+    name: VS Code Settings (File Monitor)
+    final: true
+    disabled: false
+    pipeline: main
+    description: "VS Code user settings"
+    enableOutputExpression: false
+    filter: __inputId=='file:cc-edge-vscode-io.vscode-settings'
+    clones: []
+    output: default
+  - id: vscode-extensions
+    name: VS Code Extensions (File Monitor)
+    final: true
+    disabled: false
+    pipeline: main
+    description: "VS Code installed extensions inventory"
+    enableOutputExpression: false
+    filter: __inputId=='file:cc-edge-vscode-io.vscode-extensions'
+    clones: []
+    output: default
