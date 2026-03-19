@@ -36,7 +36,7 @@ inputs:
     filenames:
       - "*settings.json"
     filterArchivedFiles: false
-    tailOnly: true
+    tailOnly: false
     idleTimeout: 300
     checkFileModTime: true
     forceText: false
@@ -63,7 +63,7 @@ inputs:
     filenames:
       - "*extensions.json"
     filterArchivedFiles: false
-    tailOnly: true
+    tailOnly: false
     idleTimeout: 300
     checkFileModTime: true
     forceText: false
