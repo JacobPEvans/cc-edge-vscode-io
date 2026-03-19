@@ -38,6 +38,10 @@ The `main` pipeline adds a `copilot_source` field to events based on the source 
 
 ## Release Notes
 
+### v1.0.1
+
+- Fix: disable `tailOnly` on JSON config inputs (`vscode-settings`, `vscode-extensions`) to prevent data loss on full-file rewrites
+
 ### v1.0.0
 
 - Initial release
